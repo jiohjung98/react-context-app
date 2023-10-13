@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import SummaryPage from './pages/SummaryPage';
 import OrderPage from './pages/OrderPage';
+import CompletePage from './pages/CompletePage';
 import { useState } from 'react';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div style={{ padding: '4rem' }}>
       {step === 0  && <OrderPage setStep={setStep} />}
       {step === 1 && <SummaryPage setStep={setStep} />}
-      {step === 2 && <OrderPage setStep={setStep} />}
+      {step === 2 && <CompletePage setStep={setStep} />}
     </div>
   );
 }
